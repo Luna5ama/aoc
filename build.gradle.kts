@@ -2,7 +2,7 @@ group = "dev.luna5ama"
 version = "1.0-SNAPSHOT"
 
 plugins {
-    kotlin("jvm") version "2.1.0"
+    kotlin("jvm") version "2.3.0-RC2"
     id("dev.luna5ama.jar-optimizer") version "1.2.2"
 }
 
@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
-    implementation("it.unimi.dsi:fastutil:8.5.12")
+    implementation("it.unimi.dsi:fastutil:8.5.18")
 }
 
 tasks {
