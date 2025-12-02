@@ -1,3 +1,5 @@
+package dev.luna5ama.aoc.aoc24
+
 fun main() {
     class Computer(val reg: LongArray, val program: List<Int>) {
         var pc = 0

@@ -1,3 +1,5 @@
+package dev.luna5ama.aoc.aoc24
+
 import kotlin.math.absoluteValue
 import kotlin.math.sign
 

@@ -1,7 +1,9 @@
+package dev.luna5ama.aoc.aoc24
+
+import dev.luna5ama.aoc.IntVec2
 import java.awt.image.BufferedImage
 import java.io.File
 import javax.imageio.ImageIO
-import kotlin.jvm.Throws
 import kotlin.math.min
 
 fun main() {

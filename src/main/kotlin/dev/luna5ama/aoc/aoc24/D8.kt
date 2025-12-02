@@ -1,3 +1,8 @@
+package dev.luna5ama.aoc.aoc24
+
+import dev.luna5ama.aoc.IntMatrix
+import dev.luna5ama.aoc.permutation
+
 fun main() {
     val input = readInput("D8.txt").toCharMatrix()
     val antennas = input.withXY()

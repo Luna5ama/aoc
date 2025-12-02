@@ -1,3 +1,5 @@
+package dev.luna5ama.aoc.aoc24
+
 import it.unimi.dsi.fastutil.longs.Long2LongOpenHashMap
 
 fun main() {

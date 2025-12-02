@@ -1,3 +1,8 @@
+package dev.luna5ama.aoc.aoc24
+
+import dev.luna5ama.aoc.Direction4
+import dev.luna5ama.aoc.IntMatrix
+
 fun main() {
     val input = readInput("D6.txt")
 

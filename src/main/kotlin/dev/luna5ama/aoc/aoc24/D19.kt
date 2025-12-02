@@ -1,3 +1,5 @@
+package dev.luna5ama.aoc.aoc24
+
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap
 import it.unimi.dsi.fastutil.objects.Object2LongOpenHashMap
 

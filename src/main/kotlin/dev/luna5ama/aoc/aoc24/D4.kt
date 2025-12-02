@@ -1,3 +1,5 @@
+package dev.luna5ama.aoc.aoc24
+
 fun main() {
     val input = readInput("D4.txt").lines()
     val rows = input.size

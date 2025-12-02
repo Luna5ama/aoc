@@ -1,3 +1,5 @@
+package dev.luna5ama.aoc.aoc24
+
 import java.math.BigInteger
 
 fun main() {

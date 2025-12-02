@@ -1,6 +1,9 @@
+package dev.luna5ama.aoc.aoc24
+
+import dev.luna5ama.aoc.IntVec2
+import dev.luna5ama.aoc.LongVec2
 import it.unimi.dsi.fastutil.longs.LongOpenHashSet
 import it.unimi.dsi.fastutil.objects.ObjectHeapPriorityQueue
-import java.math.BigDecimal
 import java.math.MathContext
 import java.math.RoundingMode
 

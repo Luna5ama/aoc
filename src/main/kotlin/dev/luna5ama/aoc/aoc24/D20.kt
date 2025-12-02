@@ -1,3 +1,9 @@
+package dev.luna5ama.aoc.aoc24
+
+import dev.luna5ama.aoc.Direction4
+import dev.luna5ama.aoc.IntMatrix
+import dev.luna5ama.aoc.IntVec2
+import dev.luna5ama.aoc.plus
 import it.unimi.dsi.fastutil.objects.ObjectArrayList
 import kotlin.math.abs
 

@@ -1,3 +1,5 @@
+package dev.luna5ama.aoc.aoc24
+
 fun main() {
     val mulRegex = """(mul)\((\d+),((\d)+)\)""".toRegex()
     val doRegex = """(do)\(\)""".toRegex()

@@ -1,3 +1,10 @@
+package dev.luna5ama.aoc.aoc24
+
+import dev.luna5ama.aoc.CharMatrix
+import dev.luna5ama.aoc.Direction4
+import dev.luna5ama.aoc.IntVec2
+import dev.luna5ama.aoc.plus
+
 fun main() {
     run {
         val input = readInput("D15.txt").lines()

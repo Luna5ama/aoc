@@ -1,3 +1,5 @@
+package dev.luna5ama.aoc.aoc24
+
 fun main() {
     fun evolve(initial: Int, iterations: Int): Int {
         var value = initial

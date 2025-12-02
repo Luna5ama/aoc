@@ -1,3 +1,9 @@
+package dev.luna5ama.aoc.aoc24
+
+import dev.luna5ama.aoc.CharMatrix
+import dev.luna5ama.aoc.Direction4
+import dev.luna5ama.aoc.permutation
+import dev.luna5ama.aoc.toArrowChar
 import kotlin.math.abs
 
 typealias AdjList<N, E> = Map<N, Map<N, E>>
