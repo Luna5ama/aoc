@@ -41,3 +41,13 @@ infix fun <A, B> List<A>.cartesianProduct(b: List<B>): Sequence<Pair<A, B>> {
         }
     }
 }
+
+
+fun <T> Pair<T, T>.asSequence() = sequence {
+    yield(first)
+    yield(second)
+}
+
+fun <T> Sequence<Pair<T, T>>.flatten() = flatMap { it.asSequence() }
+
+fun <T> List<Pair<T, T>>.flatten() = flatMap { it.asSequence() }
