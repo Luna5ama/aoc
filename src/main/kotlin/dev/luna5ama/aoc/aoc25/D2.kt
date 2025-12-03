@@ -18,8 +18,7 @@ fun main() {
 
     val part1 = numbers.asSequence()
         .filter {
-            val str = it.toString()
-            return@filter check(str, 2)
+            check(it.toString(), 2)
         }
         .sum()
 
