@@ -32,7 +32,6 @@ fun main() {
                 }
             }.map { row[it] }
         }
-        .onEach(::println)
         .map { it.fold(0L) { acc, v -> acc * 10 + v } }
         .sumOf { it }
 
