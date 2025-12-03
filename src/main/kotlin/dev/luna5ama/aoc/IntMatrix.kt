@@ -1,5 +1,7 @@
 package dev.luna5ama.aoc
 
+import kotlin.text.digitToInt
+
 class IntMatrix {
     val rows: Int
     val cols: Int
@@ -109,4 +111,16 @@ class IntMatrix {
     }
 
     data class XYValue(val xy: IntVec2, val value: Int)
+
+    data class XValue(val x: Int, val value: Int)
+}
+
+fun String.toIntMatrix(): IntMatrix {
+    return lines().toIntMatrix()
+}
+
+fun List<String>.toIntMatrix(): IntMatrix {
+    val rows = this.size
+    val cols = this[0].length
+    return IntMatrix(rows, cols) { x, y -> this[y][x].digitToInt() }
 }
