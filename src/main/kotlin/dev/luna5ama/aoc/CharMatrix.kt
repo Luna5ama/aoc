@@ -117,6 +117,17 @@ class CharMatrix {
         }
     }
 
+    override fun toString(): String {
+        return buildString {
+            for (y in yRange) {
+                for (x in xRange) {
+                    append(this@CharMatrix[x, y])
+                }
+                appendLine()
+            }
+        }
+    }
+
     data class XYValue(val xy: IntVec2, val value: Char)
 }
 

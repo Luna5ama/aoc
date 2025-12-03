@@ -47,26 +47,6 @@ fun Direction4.toArrowChar() = when (this) {
     Direction4.LEFT -> '<'
 }
 
-fun <T> List<T>.permutation(n: Int): Sequence<List<T>> {
-    return if (n == 0) {
-        sequenceOf(emptyList())
-    } else {
-        val indices = IntArray(n)
-        sequence {
-            while (true) {
-                yield(indices.map { this@permutation[it] })
-                var i = 0
-                while (i < n && indices[i] == size - 1) {
-                    indices[i] = 0
-                    i++
-                }
-                if (i == n) break
-                indices[i]++
-            }
-        }
-    }
-}
-
 fun Long.unpack(): IntVec2 {
     return IntVec2((this shr 32).toInt(), this.toInt())
 }
