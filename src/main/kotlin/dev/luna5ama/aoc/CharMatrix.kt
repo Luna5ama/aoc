@@ -119,3 +119,13 @@ class CharMatrix {
 
     data class XYValue(val xy: IntVec2, val value: Char)
 }
+
+fun String.toCharMatrix(): CharMatrix {
+    return lines().toCharMatrix()
+}
+
+fun List<String>.toCharMatrix(): CharMatrix {
+    val rows = this.size
+    val cols = this[0].length
+    return CharMatrix(Array(rows) { y -> CharArray(cols) { x -> this[y][x] } })
+}
