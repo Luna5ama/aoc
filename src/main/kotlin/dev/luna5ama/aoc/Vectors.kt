@@ -17,6 +17,10 @@ data class IntVec2(val x: Int, val y: Int) {
     fun toLongVec2() = LongVec2(x.toLong(), y.toLong())
 
     fun pack() = (x.toLong() shl 32) or y.toLong()
+
+    companion object {
+        val ZERO = IntVec2(0, 0)
+    }
 }
 
 enum class Direction4(val dx: Int, val dy: Int, val oppositeIndex: Int, val bitMask: Int) {

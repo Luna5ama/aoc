@@ -32,7 +32,7 @@ infix fun <A, B> List<A>.uniquePairs(b: List<B>): Sequence<Pair<A, B>> {
     }
 }
 
-infix fun <A, B> List<A>.cartesianProduct(b: List<B>): Sequence<Pair<A, B>> {
+infix fun <A, B> Iterable<A>.cartesianProduct(b: Iterable<B>): Sequence<Pair<A, B>> {
     return sequence {
         this@cartesianProduct.forEach { ea ->
             b.forEach { eb ->
