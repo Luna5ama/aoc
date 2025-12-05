@@ -51,3 +51,9 @@ fun <T> Pair<T, T>.asSequence() = sequence {
 fun <T> Sequence<Pair<T, T>>.flatten() = flatMap { it.asSequence() }
 
 fun <T> List<Pair<T, T>>.flatten() = flatMap { it.asSequence() }
+
+fun <T> List<T>.replace(index: Int, value: T): List<T> {
+    val newList = this.toMutableList()
+    newList[index] = value
+    return newList
+}
