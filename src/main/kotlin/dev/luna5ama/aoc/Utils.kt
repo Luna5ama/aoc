@@ -57,3 +57,9 @@ fun <T> List<T>.replace(index: Int, value: T): List<T> {
     newList[index] = value
     return newList
 }
+
+fun <T> List<List<T>>.transposed(): List<List<T>> = List(this.first().size) { j->
+    List(this.size) { i ->
+        this[i][j]
+    }
+}
